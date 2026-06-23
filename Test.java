@@ -1,6 +1,14 @@
-
-public class helloworld{
-public static void main(String[] args){
-System.out.println("hi");
+interface Animal {
+void sound();
+}
+class Dog implements Animal {
+public void sound() {
+System.out.println("Dog barks");
+}
+}
+public class Test {
+public static void main(String[] args) {
+Dog d = new Dog();
+d.sound();
 }
 }
